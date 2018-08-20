@@ -13,7 +13,7 @@ export class AppMenus {
 
         // 用户中心
         new MenuItem(
-            'User',
+            'UserManage',
             'Pages.Roles',
             'anticon anticon-safety',
             '/app/roles',
@@ -43,7 +43,7 @@ export class AppMenus {
         ),
         // 用户
         new MenuItem(
-            'Intro',
+            'SystemIntro',
             'Pages.Users',
             'anticon anticon-user',
             '',
@@ -64,12 +64,18 @@ export class AppMenus {
                 ),
                 // ENFIapc
                 new MenuItem(
-                    'EpcIntro',
+                    'EapcIntro',
                     'Pages.Users',
                     'anticon anticon-user',
                     '/app/intro/eapcintro',
                 ),
-
+                // 使用教程
+                new MenuItem(
+                    'Document',
+                    'Pages.Users',
+                    'anticon anticon-user',
+                    '/app/intro/document',
+                ),
             ]
         ),
         // 关于我们

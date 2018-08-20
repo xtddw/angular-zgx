@@ -224,5 +224,15 @@
     <text name="ClickHere" value="点击这里" />
     <text name="Apply" value="应用" />
     <text name="CustomRange" value="自定义范围" />
+
+    
+    
+    
+    <text name="UserManage" value="用户中心" />
+    <text name="SystemIntro" value="系统介绍" />
+    <text name="Document" value="使用文档"/>
+    <text name="SmartMetallurgy" value="有色智能冶炼" />
+    <text name="EapcIntro" value="EAPC" />
+    <text name="DCS" value="现状与局限"/>
   </texts>
 </localizationDictionary>

@@ -1,237 +1,182 @@
-<h2 class="text-center"> 中国恩菲智能冶炼探索与成果 </h2>
-<hr/>
-<div class="lead">
-    <div class="row">
-        <h2>系统简述</h2>
+<page-header title='中国恩菲智能冶炼探索——EAPC'> </page-header>
+
+<nz-card nzTitle='系统简述'>
+    <div>
         <p>
             中国恩菲先进过程控制系统(ENFI Advanced Process Control，简称EAPC)是一套部署生产企业生产DCS系统之上，用于稳定生产操作、优化工艺控制条件的智能化平台，该系统基于冶炼工艺的基本原理，依靠内置强大的冶金热力学数据库，将冶炼企业的生产工艺控制过程进行数学建模，并采用先进的在线控制算法，无需人工干预即可在不同的工况条件下自动计算出需要控制的主要工艺操作参数，自适应消除系统偏差，从而为冶炼生产作业的稳定连续作业和进一步的工艺优化提供重要技术保障。
             其主要目标和作用有：
         </p>
         <ul>
-            <li>
-                彻底解决原料成分和工况条件等波动引起的生产不稳定问题，为冶炼生产作业的稳定、安全运营提供重要技术保障。
-            </li>
-            <li>
-                大幅减少人为因素对冶炼生产过程产生的影响。系统自动获取数据，冶金模型计算数据可自动下发DCS执行，减少操作人员非正常操作引起的生产影响。
-            </li>
-            <li>
-                实现冶炼生产过程的智能、快速和最优的生产调整。联立生产系统中采集的各类数据，在对冶炼的生产过程进行实时监测的同时，采用智能反馈控制算法动态运算调整修正量。
-            </li>
-            <li>
-                为冶炼生产的进一步工艺优化创造条件。通过数据库查询分析模块，对生产大数据进行挖掘分析，为生产企业不断地对工艺优化创造具体条件。
-            </li>
+            <li> 彻底解决原料成分和工况条件等波动引起的生产不稳定问题，为冶炼生产作业的稳定、安全运营提供重要技术保障。 </li>
+            <li> 大幅减少人为因素对冶炼生产过程产生的影响。系统自动获取数据，冶金模型计算数据可自动下发DCS执行，减少操作人员非正常操作引起的生产影响。 </li>
+            <li> 实现冶炼生产过程的智能、快速和最优的生产调整。联立生产系统中采集的各类数据，在对冶炼的生产过程进行实时监测的同时，采用智能反馈控制算法动态运算调整修正量。 </li>
+            <li> 为冶炼生产的进一步工艺优化创造条件。通过数据库查询分析模块，对生产大数据进行挖掘分析，为生产企业不断地对工艺优化创造具体条件。 </li>
         </ul>
     </div>
+</nz-card>
 
-    <div class="row">
-        <h2 class="text-danger"> 系统原理及构成 </h2>
-        <div class="row">
-            <img src="../assets/images/relation.png" i class='apc_image'>
-            <img src="../assets/images/技术架构图.svg">
-            <h3 class="lead text-success text-center"> 系统架构</h3>
+<nz-card nzTitle='系统构成'>
+    <img src="../assets/images/relation.png" style="height:400px">
+    <img src="../assets/images/技术架构图.svg" style="height:400px">
+</nz-card>
 
-        </div>
-        <div class="row">
-            <img src="../assets/images/yuanli.png">
-            <h3 class="lead text-success text-center col-md-12"> 数据交互</h3>
-        </div>
-        <div class="row">
-            <img src="../assets/images/goucheng.png">
-            <h3 class="lead text-success text-center col-md-12 "> 系统原理</h3>
-        </div>
-    </div>
-    <div class="row ">
-        <h2 class="text-danger ">功能介绍</h2>
+<nz-card nzTitle="系统原理">
+    <img src="../assets/images/yuanli.png" style="height:400px">
+    <img src="../assets/images/goucheng.png" style="height:400px">
+</nz-card>
 
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h2 class="panel-title ">数据通讯</h2>
-            </div>
-            <div class="panel-body ">
-                <ul class="list-unstyled ">
-                    <li>
-                        <b>与DCS系统通讯:</b>
-                        <p>
-                            采用OPC等多种通讯协议，实时采集DCS系统数据，并将EAPC系统下发执行的数据写入DCS系统中。
-                        </p>
-                    </li>
-                    <li>
-                        <b>与化验中心通讯:</b>
-                        <p>
-                            采用TCP\IP通讯协议，单独开发化验中心数据通讯终端，将化验分析中心的数据传送至EAPC系统中。
-                        </p>
-                    </li>
-                    <li>
-                        <b>与MES系统通讯:</b>
-                        <p>
-                            系统开放访问数据库接口，上层MES系统可访问该系统数据库存储管理的所有实时和历史数据。
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<nz-card nzTitle="系统功能">
+    <nz-card nzTitle="数据通讯">
+        <ul class="list-unstyled ">
+            <li>
+                <b>与DCS系统通讯:</b>
+                <p>
+                    采用OPC等多种通讯协议，实时采集DCS系统数据，并将EAPC系统下发执行的数据写入DCS系统中。
+                </p>
+            </li>
+            <li>
+                <b>与化验中心通讯:</b>
+                <p>
+                    采用TCP\IP通讯协议，单独开发化验中心数据通讯终端，将化验分析中心的数据传送至EAPC系统中。
+                </p>
+            </li>
+            <li>
+                <b>与MES系统通讯:</b>
+                <p>
+                    系统开放访问数据库接口，上层MES系统可访问该系统数据库存储管理的所有实时和历史数据。
+                </p>
+            </li>
+        </ul>
+    </nz-card>
 
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h3 class="panel-title "><span class="text-success glyphicon glyphicon glyphicon-tags "></span> 配料策略</h3>
-            </div>
-            <div class="panel-body ">
-                <ul class="list-unstyled ">
-                    <li>
-                        <b>原料配料策略:</b>
-                        <p>
-                            冶炼厂的原料来源复杂多变，系统依据生产目标，采用寻优计算后提供满足生产技术要求的原料配料方案。
-                        </p>
-                    </li>
-                    <li>
-                        <b>杂质控制策略:</b>
-                        <p>
-                            基于生产经验及冶金工艺要求，对于原料中的某些有害杂质建立杂质控制策略，避免杂质含量过高对生产系统造成不利。
-                        </p>
-                    </li>
-                    <li>
-                        <b>生产辅料策略:</b>
-                        <P>
-                            通过工艺数模系统实时计算出辅料（如熔剂、煤）的配料参数，自动通过DCS系统下发辅料料仓量，准确及时地进行生产调整。
-                        </P>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nz-card nzTitle="配料策略">
+        <ul class="list-unstyled ">
+            <li>
+                <b>原料配料策略:</b>
+                <p>
+                    冶炼厂的原料来源复杂多变，系统依据生产目标，采用寻优计算后提供满足生产技术要求的原料配料方案。
+                </p>
+            </li>
+            <li>
+                <b>杂质控制策略:</b>
+                <p>
+                    基于生产经验及冶金工艺要求，对于原料中的某些有害杂质建立杂质控制策略，避免杂质含量过高对生产系统造成不利。
+                </p>
+            </li>
+            <li>
+                <b>生产辅料策略:</b>
+                <P>
+                    通过工艺数模系统实时计算出辅料（如熔剂、煤）的配料参数，自动通过DCS系统下发辅料料仓量，准确及时地进行生产调整。
+                </P>
+            </li>
+        </ul>
+    </nz-card>
 
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h3 class="panel-title "><span class="text-success glyphicon glyphicon glyphicon-tags "></span> 生产操作控制</h3>
-            </div>
-            <div class="panel-body ">
-                <p>依据冶炼企业的生产工艺控制过程进行数学建模，并采用先进的在线控制算法，无需人工干预即可在不同的工况条件下自动计算出冶炼生产控制的工艺操作参数。</p>
-                <p> 以铜熔炼为例，控制三大核心目标参数为：</p>
-                <div>
-                    <div nz-row [nzGutter]="6 ">
-                        <div nz-col [nzSpan]="6 ">
-                            <nz-card nzTitle="1 ">
-                                <p>铜锍品位(Cu%)</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="6 ">
-                            <nz-card nzTitle="2 ">
-                                <p>铜熔炼渣Fe/SiO2</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="6 ">
-                            <nz-card nzTitle="3 ">
-                                <p>铜熔炼渣温</p>
-                            </nz-card>
-                        </div>
+    <nz-card nzTitle="生产操作控制">
+        <div>
+            <p>依据冶炼企业的生产工艺控制过程进行数学建模，并采用先进的在线控制算法，无需人工干预即可在不同的工况条件下自动计算出冶炼生产控制的工艺操作参数。</p>
+            <p> 以铜熔炼为例，控制三大核心目标参数为：</p>
+            <div>
+                <div nz-row [nzGutter]="6 ">
+                    <div nz-col [nzSpan]="6 ">
+                        <nz-card nzTitle="1 ">
+                            <p>铜锍品位(Cu%)</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="6 ">
+                        <nz-card nzTitle="2 ">
+                            <p>铜熔炼渣Fe/SiO2</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="6 ">
+                        <nz-card nzTitle="3 ">
+                            <p>铜熔炼渣温</p>
+                        </nz-card>
                     </div>
                 </div>
+            </div>
 
-                <p> 以铅熔炼为例，控制五大核心目标参数为：</p>
-                <div>
-                    <div nz-row [nzGutter]="4 ">
-                        <div nz-col [nzSpan]="4 ">
-                            <nz-card nzTitle="1 ">
-                                <p>渣含铅(Pb%)</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="4 ">
-                            <nz-card nzTitle="2 ">
-                                <p>铅熔炼渣Fe/SiO2</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="4 ">
-                            <nz-card nzTitle="3 ">
-                                <p>铅熔炼渣CaO/SiO2</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="4 ">
-                            <nz-card nzTitle="4 ">
-                                <p>一次粗铅品位(Pb%)</p>
-                            </nz-card>
-                        </div>
-                        <div nz-col [nzSpan]="4 ">
-                            <nz-card nzTitle="5 ">
-                                <p>铅熔炼渣温</p>
-                            </nz-card>
-                        </div>
+            <p> 以铅熔炼为例，控制五大核心目标参数为：</p>
+            <div>
+                <div nz-row [nzGutter]="4 ">
+                    <div nz-col [nzSpan]="4 ">
+                        <nz-card nzTitle="1 ">
+                            <p>渣含铅(Pb%)</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="4 ">
+                        <nz-card nzTitle="2 ">
+                            <p>铅熔炼渣Fe/SiO2</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="4 ">
+                        <nz-card nzTitle="3 ">
+                            <p>铅熔炼渣CaO/SiO2</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="4 ">
+                        <nz-card nzTitle="4 ">
+                            <p>一次粗铅品位(Pb%)</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col [nzSpan]="4 ">
+                        <nz-card nzTitle="5 ">
+                            <p>铅熔炼渣温</p>
+                        </nz-card>
                     </div>
                 </div>
-
-                <ul class="list-unstyled ">
-
-                    <li>
-                        <b>工艺计算：</b>
-                        <p>
-                            根据所采集测点的数据（如配料仓中铜精矿量、渣精矿量及成分和其他辅料成分等等）,围绕三大核心目标参数，通过冶金工艺模型中进行实时元素平衡、热平衡及相平衡计算，从而得出 熔剂、煤等下料量、工艺氧量、工艺风量等操作参数，并将计算结果发送到DCS系统执行。根据投入物料量、工艺参数，计算出周期(t/h)产出冰铜量、氧料比等主要工艺指标参数。
-                        </p>
-                    </li>
-                    <li>
-                        <b>反馈修正：</b>
-                        <p>
-                            对比化验分析数据与设定目标参数，计算出偏差量，下次调用计算时自动调整偏差量进行修正，相比人为手动调节反应敏捷快速，调整策略综合全面。同时，将仪表及设备的系统误差并入，大幅提高了参数准确性，
-                        </p>
-                    </li>
-                    <li>
-                        <b>工况管理:</b>
-                        <p>
-                            建立工艺流程实体三维模型，并实现动态实时数据展示，实时监控系统中各流程的的运行情况， 当系统中某一进程异常时，系统可自动识别，并进行提示报警。如炉底温度超出经验设定值上限、给料机下料量的瞬时值与设定值偏差超出设置范围，对应炉体、定量给料机将闪烁报警。
-                        </p>
-                    </li>
-                </ul>
             </div>
+
+            <ul class="list-unstyled ">
+
+                <li>
+                    <b>工艺计算：</b>
+                    <p>
+                        根据所采集测点的数据（如配料仓中铜精矿量、渣精矿量及成分和其他辅料成分等等）,围绕三大核心目标参数，通过冶金工艺模型中进行实时元素平衡、热平衡及相平衡计算，从而得出 熔剂、煤等下料量、工艺氧量、工艺风量等操作参数，并将计算结果发送到DCS系统执行。根据投入物料量、工艺参数，计算出周期(t/h)产出冰铜量、氧料比等主要工艺指标参数。
+                    </p>
+                </li>
+                <li>
+                    <b>反馈修正：</b>
+                    <p>
+                        对比化验分析数据与设定目标参数，计算出偏差量，下次调用计算时自动调整偏差量进行修正，相比人为手动调节反应敏捷快速，调整策略综合全面。同时，将仪表及设备的系统误差并入，大幅提高了参数准确性，
+                    </p>
+                </li>
+                <li>
+                    <b>工况管理:</b>
+                    <p>
+                        建立工艺流程实体三维模型，并实现动态实时数据展示，实时监控系统中各流程的的运行情况， 当系统中某一进程异常时，系统可自动识别，并进行提示报警。如炉底温度超出经验设定值上限、给料机下料量的瞬时值与设定值偏差超出设置范围，对应炉体、定量给料机将闪烁报警。
+                    </p>
+                </li>
+            </ul>
         </div>
+    </nz-card>
 
-
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h3 class="panel-title "><span class="text-success glyphicon glyphicon glyphicon-tags "></span> 生产实时监控</h3>
-            </div>
-            <div class="panel-body ">
-                (Realtime Produce and Supervisory Control System，简称RPC)，主要实现将企业各生产单元的DCS控制系统等实时集中监控， 并且制作报表以及对实时数据进行应用分析。包括数据采集接口、实时数据库服务器（PI、IP21等）、实时数据发布以及制作报表等。
-                RPC实现底层生产过程实时信息的采集，通过信息集成形成优化控制、优化调度和优化决策等的判断或指令。 使生产过程数据和企业管理数据的在实时数据平台中融合与贯通。
-            </div>
+    <nz-card nzTitle="生产实时监控">
+        <div>
+            (Realtime Produce and Supervisory Control System，简称RPC)，主要实现将企业各生产单元的DCS控制系统等实时集中监控， 并且制作报表以及对实时数据进行应用分析。包括数据采集接口、实时数据库服务器（PI、IP21等）、实时数据发布以及制作报表等。
+            RPC实现底层生产过程实时信息的采集，通过信息集成形成优化控制、优化调度和优化决策等的判断或指令。 使生产过程数据和企业管理数据的在实时数据平台中融合与贯通。
         </div>
+    </nz-card>
 
+    <nz-card nzTitle="数据查询与分析">
+        <ul>
+            <li>系统服务器端采用MySql数据库存储并维护所采集的化验数据、DCS数据及EAPC系统计算数据，用户可根据需要查看任意时段的历史数据。</li>
+            <li>系统提供丰富的数据查询功能，用户可以很快捷方便地完成生产考核、生产报表生成等日常管理任务。</li>
+            <li>系统提供强大的数学分析工具，用户可以自由选择研究内容在线进行数据分析，挖掘数据之间的隐形关系，反哺生产参数的优化。</li>
+        </ul>
+    </nz-card>
 
+    <nz-card nzTitle="线下生产预演">
+        <ul>
+            <li> 离线状态下，系统可作为虚拟生产线，进行生产预演。验证工艺参数可行性，准备生产辅料等。</li>
+            <li> 离线状态下，系统可模拟工艺实景，作为企业工艺人员培训及业务考核系统。</li>
+        </ul>
+    </nz-card>
 
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h3 class="panel-title "><span class="text-success glyphicon glyphicon glyphicon-tags "></span> 数据查询与分析</h3>
-            </div>
-            <div class="panel-body ">
-                <ul>
-                    <li>系统服务器端采用MySql数据库存储并维护所采集的化验数据、DCS数据及EAPC系统计算数据，用户可根据需要查看任意时段的历史数据。</li>
-                    <li>系统提供丰富的数据查询功能，用户可以很快捷方便地完成生产考核、生产报表生成等日常管理任务。</li>
-                    <li>系统提供强大的数学分析工具，用户可以自由选择研究内容在线进行数据分析，挖掘数据之间的隐形关系，反哺生产参数的优化。</li>
-                </ul>
-            </div>
-        </div>
+</nz-card>
 
-
-        <div class="panel panel-default ">
-            <div class="panel-heading ">
-                <h3 class="panel-title "><span class="text-success glyphicon glyphicon glyphicon-tags "></span> 线下生产预演</h3>
-            </div>
-            <div class="panel-body ">
-                <ul>
-                    <li> 离线状态下，系统可作为虚拟生产线，进行生产预演。验证工艺参数可行性，准备生产辅料等。</li>
-                    <li> 离线状态下，系统可模拟工艺实景，作为企业工艺人员培训及业务考核系统。</li>
-                </ul>
-            </div>
-        </div>
-
-
-
-    </div>
-    <div class="row ">
-        <h2 class="text-danger ">
-            <span class="glyphicon glyphicon-map-marker ">市场应用</span>
-        </h2>
-        <p>
-            中国恩菲智能冶炼研究室开发团队历时两年，在恩菲研究院、冶金化工事业部等多部门的通力合作下，完成了EAPC系统的开发，并在烟台国润铜业项目上成功应用实施，于2017年年底投入生产应用。
-        </p>
-        <img src="../assets/images/enfi.png ">
-        <img src="../assets/images/apc.png ">
-        <br />
-    </div>
-</div>
+<nz-card nzTitle='市场应用'>
+    <p> 中国恩菲智能冶炼研究室开发团队历时两年，在恩菲研究院、冶金化工事业部等多部门的通力合作下，完成了EAPC系统的开发，并在烟台国润铜业项目上成功应用实施，于2017年年底投入生产应用。 </p>
+    <img src="../assets/images/enfi.png " style="height:400px">
+    <img src="../assets/images/apc.png ">
+</nz-card>
