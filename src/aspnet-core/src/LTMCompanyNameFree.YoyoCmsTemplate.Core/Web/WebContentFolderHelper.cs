@@ -20,7 +20,7 @@ namespace LTMCompanyNameFree.YoyoCmsTemplate.Web
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
-            while (!DirectoryContains(directoryInfo.FullName, "LTMCompanyNameFree.YoyoCmsTemplate.sln"))
+            while (!DirectoryContains(directoryInfo.FullName, "EAPC.sln"))
             {
                 if (directoryInfo.Parent == null)
                 {
