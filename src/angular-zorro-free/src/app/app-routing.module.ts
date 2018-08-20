@@ -40,6 +40,10 @@ const routes: Routes = [
         canActivate: [AppRouteGuard],
       },
       {
+        path: 'intro',
+        loadChildren: "./intro/intro.module#IntroModule"
+      },
+      {
         path: '**',
         redirectTo: 'home',
       },
@@ -51,4 +55,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

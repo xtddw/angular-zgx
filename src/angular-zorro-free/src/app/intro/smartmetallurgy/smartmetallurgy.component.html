@@ -1,0 +1,26 @@
+<h2 class="text-center">有色智能冶炼建设任务及目标</h2>
+<hr />
+
+<label class="center-block lead">有色智能冶炼核心任务</label>
+
+<nz-collapse>
+    <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active" [nzDisabled]="panel.disabled">
+        <p style="margin:0;">{{panel.desc}}</p>
+        <ul *ngFor='let item of panel.context'>
+            <li>{{item}}</li>
+        </ul>
+    </nz-collapse-panel>
+</nz-collapse>
+
+<!-- <img class="img-thumbnail" src="../assets/images/line.jpg" height="200" /> -->
+<hr />
+<label class="center-block lead">有色智能冶炼目标</label>
+<ul>
+    <li class="list-group-item">实现高端智能技术装备在有色冶炼流程型制造领域的集成应用。</li>
+    <li class="list-group-item">满足从设计、工艺、制造、检验、生产运行和远程运维服务等全生命周期的智能化要求。</li>
+    <li class="list-group-item">显著提升有色生产企业生产效率，降低运营成本，实现数字化、信息化、智能化生产过程。</li>
+    <li class="list-group-item">促进传统制造业转型升级，为行业安全、高效、绿色、生态发展贡献力量。</li>
+</ul>
+
+<label class="center-block lead">有色智能厂系统架构</label>
+<img src="../assets/images/系统框架.jpg" class="img-thumbnail" style="border:0px" />

@@ -1,0 +1,44 @@
+<h2 class="text-center"> 冶炼生产自动化控制现状及其局限 </h2>
+<hr/>
+
+<div> 目前，大部分有色企业生产自动化控制系统均使用集散控制系统(Distributed Control System,简称DCS),该系统实现了仪表、电动设备监控一体化。在系统的操作站上集中完成电动设备运行状态、过程控制等相关的工艺参数显示及电动设备启停控制等。
+</div>
+
+<img src="../assets/images/dcs.jpg" height="400" />
+
+<hr />
+
+<div>
+  <nz-list [nzDataSource]="dcs_adv" nzBordered nzSize="small" [nzHeader]="'DCS特点'" [nzRenderItem]="item">
+    <ng-template #item let-item>
+      <nz-list-item [nzContent]="item"></nz-list-item>
+    </ng-template>
+  </nz-list>
+</div>
+
+<p>
+  采用DCS控制系统可以实现生产操作的自动化，而有色冶炼通常是高温、多相、多组分的连续反应过程，由于冶炼过程内在工艺的复杂性，对于实际工艺过程的控制和决策常常需要依靠个人经验,操作流程大致如下：
+</p>
+
+<div>
+  <nz-list>
+    <nz-list-item><i class="anticon anticon-form"></i> 凭借经验或公式,简单估算出工艺控制的理论操作参数 </nz-list-item>
+    <nz-list-item><i class="anticon anticon-form"></i> 进入DCS系统，打开组态控制体输入框，手动输入工艺控制参数</nz-list-item>
+    <nz-list-item><i class="anticon anticon-form"></i> DCS接受新的操作参数，下发给仪表执行机构的终端,完成实体操作</nz-list-item>
+  </nz-list>
+</div>
+
+<div class="lead"> 这种单纯依靠DCS系统进行工艺过程控制方式解决了“手”的问题，没有能够解决“脑”的问题，面对智能冶炼生产操作而言其存在的主要问题有：</div>
+
+<div *ngFor='let item of dcs_disadv'>
+  <nz-card [nzTitle]="item.title" [nzExtra]="extraTemplate">
+    <p>{{item.desc}}</p>
+  </nz-card>
+  <ng-template #extraTemplate>
+    <a>More</a>
+  </ng-template>
+</div>
+
+<div class="lead">
+  综上所述，单纯依靠DCS控制系统组织生产操作，在控制的准确性、稳定性、及时性都不能达到现代智能化的水平，给企业可能带来风险和经济损失。同时系统不具备生产预测、自我调节的功能。正式因为这些原因，国内有色生产企业也意识到这点，与中国恩菲签订了合作研发合同，共同开展智能控制系统的研究。
+</div>
